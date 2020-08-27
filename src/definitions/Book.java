@@ -15,4 +15,7 @@ public class Book {
         return bookName;
     }
 
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
 }
