@@ -30,4 +30,8 @@ public class Book {
     public String getThirteenDigitIsbnNumber() {
         return thirteenDigitIsbnNumber;
     }
+
+    public void setThirteenDigitIsbnNumber(String thirteenDigitIsbnNumber) {
+        this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
+    }
 }
