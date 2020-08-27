@@ -34,4 +34,10 @@ public class Book {
     public void setThirteenDigitIsbnNumber(String thirteenDigitIsbnNumber) {
         this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
     }
+
+    public Book() {
+        bookName = "Engineering Chemistry";
+        authorName = "Shashi chawla";
+        thirteenDigitIsbnNumber = "970-7-16-452641-4";
+    }
 }
