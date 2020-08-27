@@ -46,4 +46,8 @@ public class Book {
         this.authorName = authorName;
         this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
     }
+
+    public String toString() {
+        return String.format("Book Name: %s, Author Name: %s, ISBN Number: %s", getBookName(), getAuthorName(), getThirteenDigitIsbnNumber());
+    }
 }
