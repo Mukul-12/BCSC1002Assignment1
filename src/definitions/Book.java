@@ -40,4 +40,10 @@ public class Book {
         authorName = "Shashi chawla";
         thirteenDigitIsbnNumber = "970-7-16-452641-4";
     }
+
+    public Book(String bookName, String authorName, String thirteenDigitIsbnNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
+    }
 }
