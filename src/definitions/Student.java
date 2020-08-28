@@ -13,4 +13,8 @@ public class Student {
     private Long universityRollNumber;
     private int numberOfBookIssued;
     Book[] nameOfBooksIssued;
+
+    public String getFirstName() {
+        return firstName;
+    }
 }
