@@ -16,7 +16,7 @@ public class Book {
     public Book() {
         bookName = "English Grammar";
         authorName = "Sanjeev Gupta";
-        thirteenDigitIsbnNumber = "9707164526414";
+        thirteenDigitIsbnNumber = "970-7-16-452641-4";
     }
 
     public Book(String bookName) {
