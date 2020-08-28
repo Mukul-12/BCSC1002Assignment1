@@ -57,4 +57,8 @@ public class Student {
     public Book[] getNameOfBooksIssued() {
         return nameOfBooksIssued;
     }
+
+    public void setNameOfBooksIssued(Book[] nameOfBooksIssued) {
+        this.nameOfBooksIssued = nameOfBooksIssued;
+    }
 }
