@@ -23,4 +23,8 @@ public class Library {
             currentlyAvailableBooks[Index] = new Book("Book " + (Index + 1));
         }
     }
+
+    public Library(Book[] currentlyAvailableBooks) {
+        this.currentlyAvailableBooks = currentlyAvailableBooks;
+    }
 }
