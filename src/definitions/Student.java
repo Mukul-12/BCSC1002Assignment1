@@ -49,4 +49,8 @@ public class Student {
     public int getNumberOfBookIssued() {
         return numberOfBookIssued;
     }
+
+    public void setNumberOfBookIssued(int numberOfBookIssued) {
+        this.numberOfBookIssued = numberOfBookIssued;
+    }
 }
