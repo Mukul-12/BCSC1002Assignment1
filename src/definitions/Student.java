@@ -12,4 +12,5 @@ public class Student {
     private String lastName;
     private Long universityRollNumber;
     private int numberOfBookIssued;
+    Book[] nameOfBooksIssued;
 }
