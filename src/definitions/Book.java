@@ -13,6 +13,22 @@ public class Book {
     private String authorName;
     private String thirteenDigitIsbnNumber;
 
+    public Book() {
+        bookName = "English Grammar";
+        authorName = "Sanjeev Gupta";
+        thirteenDigitIsbnNumber = "9707164526414";
+    }
+
+    public Book(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public Book(String bookName, String authorName, String thirteenDigitIsbnNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
+    }
+
     public String getBookName() {
         return bookName;
     }
@@ -34,22 +50,6 @@ public class Book {
     }
 
     public void setThirteenDigitIsbnNumber(String thirteenDigitIsbnNumber) {
-        this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
-    }
-
-    public Book() {
-        bookName = "English Grammar";
-        authorName = "Sanjeev Gupta";
-        thirteenDigitIsbnNumber = "9707164526414";
-    }
-
-    public Book(String bookName) {
-        this.bookName = bookName;
-    }
-
-    public Book(String bookName, String authorName, String thirteenDigitIsbnNumber) {
-        this.bookName = bookName;
-        this.authorName = authorName;
         this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
     }
 
