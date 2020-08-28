@@ -8,4 +8,8 @@ package definitions;
 
 public class Library {
     Book[] currentlyAvailableBooks;
+
+    public Book[] getCurrentlyAvailableBooks() {
+        return currentlyAvailableBooks.clone();
+    }
 }
