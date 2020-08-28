@@ -21,4 +21,8 @@ public class Student {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public String getMiddleName() {
+        return middleName;
+    }
 }
