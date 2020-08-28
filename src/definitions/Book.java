@@ -43,6 +43,10 @@ public class Book {
         thirteenDigitIsbnNumber = "9707164526414";
     }
 
+    public Book(String bookName) {
+        this.bookName = bookName;
+    }
+
     public Book(String bookName, String authorName, String thirteenDigitIsbnNumber) {
         this.bookName = bookName;
         this.authorName = authorName;

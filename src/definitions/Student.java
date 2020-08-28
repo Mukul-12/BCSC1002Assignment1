@@ -38,12 +38,20 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public Long getUniversityRollNumber() {
-        return universityRollNumber;
+    public Student() {
+        firstName = "Aakash";
+        middleName = "Kumar";
+        lastName = "Singh";
+        universityRollNumber = 191700789L;
+        numberOfBookIssued = 3;
+        this.nameOfBooksIssued = new Book[3];
+        for (int Index = 0; Index < nameOfBooksIssued.length; Index++) {
+            nameOfBooksIssued[Index] = new Book("Book " + (Index + 1));
+        }
     }
 
-    public void setUniversityRollNumber(Long universityRollNumber) {
-        this.universityRollNumber = universityRollNumber;
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
     }
 
     public int getNumberOfBookIssued() {
@@ -54,11 +62,15 @@ public class Student {
         this.numberOfBookIssued = numberOfBookIssued;
     }
 
-    public Book[] getNameOfBooksIssued() {
-        return nameOfBooksIssued;
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
     }
 
     public void setNameOfBooksIssued(Book[] nameOfBooksIssued) {
         this.nameOfBooksIssued = nameOfBooksIssued;
+    }
+
+    public Book[] getNameOfBooksIssued() {
+        return nameOfBooksIssued.clone();
     }
 }
