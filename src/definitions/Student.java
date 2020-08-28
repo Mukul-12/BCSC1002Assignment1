@@ -38,18 +38,6 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public Student() {
-        firstName = "Aakash";
-        middleName = "Kumar";
-        lastName = "Singh";
-        universityRollNumber = 191700789L;
-        numberOfBookIssued = 3;
-        this.nameOfBooksIssued = new Book[3];
-        for (int Index = 0; Index < nameOfBooksIssued.length; Index++) {
-            nameOfBooksIssued[Index] = new Book("Book " + (Index + 1));
-        }
-    }
-
     public long getUniversityRollNumber() {
         return universityRollNumber;
     }
@@ -72,5 +60,23 @@ public class Student {
 
     public Book[] getNameOfBooksIssued() {
         return nameOfBooksIssued.clone();
+    }
+
+    public Student() {
+        firstName = "Aakash";
+        middleName = "Kumar";
+        lastName = "Singh";
+        universityRollNumber = 191700789L;
+        numberOfBookIssued = 3;
+        this.nameOfBooksIssued = new Book[3];
+        for (int Index = 0; Index < nameOfBooksIssued.length; Index++) {
+            nameOfBooksIssued[Index] = new Book("Book " + (Index + 1));
+        }
+    }
+
+    public Student(String firstName, String middleName, String lastName) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
     }
 }
