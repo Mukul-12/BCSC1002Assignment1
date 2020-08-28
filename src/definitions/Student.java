@@ -25,4 +25,8 @@ public class Student {
     public String getMiddleName() {
         return middleName;
     }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
 }
