@@ -36,6 +36,43 @@ public class FrontDesk {
             System.out.println("Enter your choice from 1 to 4");
             userInput = scanner.nextInt();
             scanner.nextLine();
+            switch (userInput) {
+                case ISSUE_NEW_BOOK:
+                    System.out.println("Please enter your First name : ");
+                    name = scanner.nextLine();
+                    System.out.println("Please enter your University Roll Number : ");
+                    rollNumber = scanner.nextLong();
+                    System.out.println("Please choose any one book : ");
+                    for (Book book1 : library.getCurrentlyAvailableBooks()) {
+                        System.out.println(book1);
+                    }
+                    System.out.println();
+                    scanner.nextLine();
+                    choice = scanner.nextLine();
+                    System.out.println("This " + choice + " is issue for " + name + " having University RollNo. is " + rollNumber);
+                    System.out.println();
+                    break;
+                case RETURN_ISSUED_BOOK:
+                    System.out.println("Please enter your First name : ");
+                    name = scanner.nextLine();
+                    System.out.println("Please enter your University Roll Number : ");
+                    rollNumber = scanner.nextLong();
+                    System.out.println("Please enter a book name do you want to Return : ");
+                    scanner.nextLine();
+                    choice = scanner.nextLine();
+                    student.returnIssueBook(choice, name);
+                    System.out.println();
+                    break;
+                case SHOW_ALL_ISSSUE_BOOKS:
+                    System.out.println("Please enter your First name : ");
+                    name = scanner.nextLine();
+                    System.out.println("Please enter your University Roll Number : ");
+                    rollNumber = scanner.nextLong();
+                    student.showAllIssueBook();
+                    break;
+                default:
+                    System.out.println("WRONG CHOICE");
+            }
         } while (userInput < EXIT);
 
         scanner.close();
