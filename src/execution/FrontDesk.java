@@ -74,7 +74,6 @@ public class FrontDesk {
                     System.out.println("WRONG CHOICE");
             }
         } while (userInput < EXIT);
-
         scanner.close();
     }
 }
