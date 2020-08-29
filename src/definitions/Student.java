@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
-    Book[] nameOfBooksIssued;
+    Book[] namesOfBooksIssued;
     private String firstName;
     private String middleName;
     private String lastName;
@@ -23,9 +23,9 @@ public class Student {
         lastName = "Singh";
         universityRollNumber = 191700789L;
         numberOfBookIssued = 3;
-        this.nameOfBooksIssued = new Book[3];
-        for (int Index = 0; Index < nameOfBooksIssued.length; Index++) {
-            nameOfBooksIssued[Index] = new Book("Book " + (Index + 1));
+        this.namesOfBooksIssued = new Book[3];
+        for (int Index = 0; Index < namesOfBooksIssued.length; Index++) {
+            namesOfBooksIssued[Index] = new Book("Book " + (Index + 1));
         }
     }
 
@@ -76,17 +76,17 @@ public class Student {
     }
 
     public Book[] getNameOfBooksIssued() {
-        return nameOfBooksIssued.clone();
+        return namesOfBooksIssued.clone();
     }
 
     public void setNameOfBooksIssued(Book[] nameOfBooksIssued) {
-        this.nameOfBooksIssued = nameOfBooksIssued;
+        this.namesOfBooksIssued = nameOfBooksIssued;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "nameOfBooksIssued=" + Arrays.toString(nameOfBooksIssued) +
+                "nameOfBooksIssued=" + Arrays.toString(namesOfBooksIssued) +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -113,5 +113,24 @@ public class Student {
         int result = Objects.hash(getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getNumberOfBookIssued());
         result = 31 * result + Arrays.hashCode(getNameOfBooksIssued());
         return result;
+    }
+
+    /**
+     * This method print a name of return book and who return it.
+     *
+     * @param choice store return name of Book.
+     * @param name   store name of user who return  the book.
+     **/
+    public void returnIssueBook(String choice, String name) {
+        System.out.println("This " + choice + " is returned by " + name + ".");
+    }
+
+    /**
+     * THis method will provide random book name of any student.
+     **/
+    public void showAllIssueBook() {
+        for (int Index = 0; Index < 3; Index++) {
+            System.out.println("Book " + (int) (Math.random() * 10));
+        }
     }
 }

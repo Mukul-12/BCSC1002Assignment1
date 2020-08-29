@@ -54,7 +54,7 @@ public class Book {
     }
 
     public String toString() {
-        return String.format("Book Name: %s, Author Name: %s, ISBN Number: %s", getBookName(), getAuthorName(), getThirteenDigitIsbnNumber());
+        return String.format("Book Name: %s , Author Name: %s , ISBN Number: %s ", getBookName(), getAuthorName(), getThirteenDigitIsbnNumber());
     }
 
     @Override

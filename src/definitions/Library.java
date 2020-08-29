@@ -12,9 +12,9 @@ public class Library {
     Book[] currentlyAvailableBooks;
 
     public Library() {
-        this.currentlyAvailableBooks = new Book[10];
+        this.currentlyAvailableBooks = new Book[9];
         for (int Index = 0; Index < currentlyAvailableBooks.length; Index++) {
-            currentlyAvailableBooks[Index] = new Book("Book " + (Index + 1));
+            currentlyAvailableBooks[Index] = new Book("Book " + (Index + 1), "Author " + (Index + 1), "978-7-16-452-641-" + (Index + 1));
         }
     }
 
