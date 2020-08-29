@@ -27,6 +27,16 @@ public class FrontDesk {
         Student student = new Student();
         Library library = new Library();
         Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("-=-=--=-=-\"Welcome to the Front Desk\"-=-=--=-=-");
+            System.out.println("1. Issue a new book for me.");
+            System.out.println("2. Return a previously issues book for me.");
+            System.out.println("3. Show me all issues books.");
+            System.out.println("4. Exit.");
+            System.out.println("Enter your choice from 1 to 4");
+            userInput = scanner.nextInt();
+            scanner.nextLine();
+        } while (userInput < EXIT);
 
         scanner.close();
     }
